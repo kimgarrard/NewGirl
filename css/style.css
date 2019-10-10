@@ -1,0 +1,502 @@
+@font-face {
+    font-family: "ChaletComprime";
+    src: url("../fonts/ChaletComprime-CologneEighty.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SofiaRegular";
+    src: url("../fonts/SofiaProRegular.ttf") format("truetype");
+}
+
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.BG {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -2;
+  animation: BGblur 5s forwards;
+}
+
+.logodiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logodiv img {
+  width: 50%;
+  margin-top: 5%;
+  animation: inkomen 2s forwards;
+}
+
+.introtekst {
+  font-family: "ChaletComprime";
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  margin-left: -150vw;
+  animation: inkomen 2s 2s forwards;
+}
+
+.center-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-top: 10%;
+}
+
+.round {
+    position: absolute;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    opacity: 0;
+    animation: verschijnen 3s infinite;
+    animation-delay: 4s;
+}
+
+#cta{
+    width:100%; cursor: pointer; position: absolute;
+}
+
+#cta .arrow{left: 30%;}
+.arrow {position: absolute; bottom: 0;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:15px;}
+.segunda{margin-left: 8px;}
+.next {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+
+
+
+
+
+
+
+
+.stickydiv {
+  height: 310vh;
+  width: 100%;
+  position: absolute;
+}
+
+.sticky {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  margin-top: 22%;
+}
+
+.whitebg {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 25vh;
+  z-index: -1;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.06);
+}
+
+.logo2 {
+  width: 11em;
+  margin-left: 1vw;
+  position: absolute;
+  padding-top: 1%;
+}
+
+.logo2 + p {
+  margin-left: 1.5vw;
+  position: absolute;
+  margin-top: 4%;
+  padding-top: 1.2%;
+  font-family: "ChaletComprime";
+  font-size: 1.8em;
+}
+
+.karaktersdiv:nth-of-type(1) {
+  padding-top: 0.8%;
+}
+
+.karaktersdiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.karaktersdiv img {
+  border-radius: 50%;
+  width: 6.8%;
+  margin: 0.5%;
+}
+
+.karaktersdiv img:nth-of-type(5) {
+  transform: scaleX(-1);
+}
+
+.karaktersdiv p {
+  font-family: "ChaletComprime";
+  font-size: 1.2em;
+  margin: 0.5em 2.7em;
+  text-shadow: 2px 2px 8px white;
+}
+
+.karaktersdiv p:nth-of-type(1) {
+  color: #EB9486;
+  margin-left: 4%;
+}
+
+.karaktersdiv img:nth-of-type(1):hover {
+  box-shadow: 0 0 0 5px #EB9486;
+}
+
+.karaktersdiv p:nth-of-type(2) {
+  color: #EAC088;
+  margin-left: 3.5%;
+}
+
+.karaktersdiv img:nth-of-type(2):hover {
+  box-shadow: 0 0 0 5px #EAC088;
+}
+
+.karaktersdiv p:nth-of-type(3) {
+  color: #9DD9D2;
+}
+
+.karaktersdiv img:nth-of-type(3):hover {
+  box-shadow: 0 0 0 5px #9DD9D2;
+}
+
+.karaktersdiv p:nth-of-type(4) {
+  color: #AF9ED8;
+  margin-left: 2.5%;
+}
+
+.karaktersdiv img:nth-of-type(4):hover {
+  box-shadow: 0 0 0 5px #AF9ED8;
+}
+
+.karaktersdiv p:nth-of-type(5) {
+  color: #CAE7B9;
+}
+
+.karaktersdiv img:nth-of-type(5):hover {
+  box-shadow: 0 0 0 5px #CAE7B9;
+}
+
+
+
+
+
+
+
+
+
+
+.dataviz {
+  width: 100%;
+  margin-top: 32.8%;
+  z-index: -2;
+  position: relative;
+  top: 0;
+}
+
+.punt1 {
+  position: absolute;
+  /* background-color: yellow; */
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 39%;
+  margin-left: 32.5%;
+  cursor: pointer;
+}
+
+.punt1div {
+  margin-top: 40%;
+  margin-left: 40%;
+}
+
+.puntdiv {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2em;
+  width: 30%;
+  border-radius: 5%;
+  z-index: -1;
+}
+
+.puntdiv img {
+  width: 100%;
+}
+
+.puntdiv p {
+  font-family: "SofiaRegular";
+  color: white;
+}
+
+.punt2div {
+  margin-top: 43%;
+  margin-left: 47%;
+}
+
+.punt2 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 44%;
+  margin-left: 40.5%;
+  cursor: pointer;
+}
+
+.punt3div {
+  margin-top: 36%;
+  margin-left: 53%;
+}
+
+.punt3 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 35.5%;
+  margin-left: 48.5%;
+  cursor: pointer;
+}
+
+.karakterseind {
+  margin-top: -3%;
+}
+
+.karakterseind > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.karakterseind img {
+  width: 10%;
+  margin: 0 4%;
+}
+
+.whitebg2 {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 5vh;
+  z-index: -1;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.06);
+}
+
+
+
+.teksteind {
+  margin: 0em 25%;
+  margin-bottom: 10%;
+  margin-top: 6%;
+}
+
+.teksteind h2 {
+  font-family: "ChaletComprime";
+  font-size: 2em;
+  color: #076BCB;
+  margin-top: 7%;
+}
+
+.teksteind p {
+  font-family: "SofiaRegular";
+  font-size: 1em;
+  margin-top: -2%
+}
+
+
+
+
+
+
+
+
+
+
+.jess {
+  margin-top: 0;
+}
+
+.jess img {
+  position: absolute;
+  margin-top: 13%;
+  width: 40%;
+}
+
+.jessinkomen {
+  animation: inkomen 2s forwards;
+}
+
+.tekstinkomen {
+  animation: inkomenrechts 2s forwards;
+  animation-delay: 0.8s;
+}
+
+.karakters2div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  margin-top: 0.5%;
+}
+
+.karakters2div img {
+  border-radius: 50%;
+  width: 4%;
+  margin: 0.5%;
+}
+
+.karakters2div img:nth-of-type(5) {
+  transform: scaleX(-1);
+}
+
+.karakters2div img:nth-of-type(1):hover {
+  box-shadow: 0 0 0 3px #EB9486;
+}
+
+.karakters2div img:nth-of-type(2):hover {
+  box-shadow: 0 0 0 3px #EAC088;
+}
+
+.karakters2div img:nth-of-type(3):hover {
+  box-shadow: 0 0 0 3px #9DD9D2;
+}
+
+.karakters2div img:nth-of-type(4):hover {
+  box-shadow: 0 0 0 3px #AF9ED8;
+}
+
+.karakters2div img:nth-of-type(5):hover {
+  box-shadow: 0 0 0 3px #CAE7B9;
+}
+
+
+.test {
+  animation: kom 0.2s forwards !important;
+}
+
+.weg {
+  animation: weg 0.1s forwards!important;
+}
+
+.tekstjess {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 4em;
+  position: absolute;
+  font-family: "SofiaRegular";
+  margin: 12% 20% 0 50%;
+  border-radius: 2%;
+  opacity: 0;
+}
+
+.tekstjess h2 {
+  font-family: "ChaletComprime";
+  font-size: 3em;
+  color: #076BCB;
+  margin-top: 0;
+}
+
+
+
+@keyframes BGblur {
+  0% {
+    filter: blur(0px);
+    width: 100%;
+  }
+
+  100% {
+    filter: blur(5px);
+    width: 105%;
+  }
+}
+
+@keyframes inkomen {
+  0% {
+    margin-left: -150vw;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes inkomenrechts {
+  0% {
+    transform: translateX(150vw);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+}
+
+@keyframes weggaan {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -150vw;
+  }
+}
+
+@keyframes verschijnen {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  15% {
+    transform: translateX(0px);
+  }
+
+  30% {
+    transform: translateX(-10px);
+  }
+
+  45% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes weg {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes kom {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.invisible {
+  opacity: 0;
+}
