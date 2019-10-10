@@ -6,16 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>New Girl - Kissing & Dating</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300'>
 </head>
 
 <body>
 
   <img src="images/BG.png" class="BG">
-
-  <div class="jess invisible">
-  <img src="images/jesspng.png">
-  </div>
 
   <section class="karakters2 invisible">
 
@@ -29,10 +25,24 @@
 
   </section>
 
-  <div class="tekstjess invisible">
+  <div class="jess invisible">
+  <img src="images/jesspng.png">
+  </div>
+
+  <div class="tekstjess tekst invisible">
     <h2>Jessica Day</h2>
     <p>Jess is het hoofdkarakter van de serie. Ze probeert haarzelf terug te vinden na een schokkende breuk met haar vriend, die ze betrapt op vreemdgaan. Ze is docent op de basisschool en dit is helemaal haar passie. Ze houdt van knutselen, maar heeft er niet veel tijd meer voor. Ze had een nieuwe plek nodig om te wonen omdat ze het uitging met haar vriendje, dus trok ze in bij drie mannen genaamd Nick, Schmidt en Coach. De beste vriendin van Jess is Cece, een model. </p>
   </div>
+
+  <div class="nick invisible">
+  <img src="images/nickpng.png">
+  </div>
+
+  <div class="tekstnick tekst">
+    <h2>Nick Miller</h2>
+    <p>Nick is een van de drie mannen uit de loft waar Jess bij woont. Al vanaf het begin heeft hij een goeie klik met Jess, heel stiekem vind hij haar vanaf het eerst moment dat hij haar zag al leuk. Nick is een enorme sloddervos en is vaak chagrijnig, mensen in de serie omschreven hem soms als een oude man. Wel is hij heel erg lief voor Jess en staat hij altijd voor haar klaar. Daarnaast werkt hij in een bar, waar zijn vrienden vaak rondhangen.  </p>
+  </div>
+
 
 
 
@@ -81,6 +91,8 @@
 
     </section>
 
+    <img src="images/legenda.png" class="legenda">
+
     </section>
     </div>
 
@@ -106,6 +118,13 @@
     <p>Tijdens de eerste bruiloft die Jess, Nick, Schmidt en Winston samen bezoeken komt Schmidt Gretchen weer tegen. Het is
     niet een heel aantrekkelijke vrouw, een beetje mannelijk. Schmidt probeert andere meiden te versieren, maar wanneer dit niet
     lukt besluit hij toch (weer) met Gretchen mee te gaan.</p>
+    </div>
+
+    <div class="punt4"></div>
+    <div class="punt4div puntdiv invisible">
+    <img class="punt4img" src="images/punt4.png">
+    <p>Jess neemt Cece 's avonds dronken mee naar huis, Schmidt grijpt zijn kans en brengt Cece naar zijn kamer zodat ze in
+    zijn bed gaat slapen. Wanneer hij er later naast komt liggen, pakt Cece onverwachts zijn hand vast en valt zo in slaap.</p>
     </div>
 
 
@@ -177,6 +196,9 @@
         var jesspng = document.querySelector(".jess");
         var karaktersmenu = document.querySelector(".karakters2:nth-of-type(1)");
         var tekstjess = document.querySelector(".tekstjess");
+        var nick = document.querySelector(".karakters2div img:nth-of-type(2)");
+        var nickpng = document.querySelector(".nick");
+        var tekstnick = document.querySelector(".tekstnick");
 
         var punt1 = document.querySelector(".punt1");
         var punt1div = document.querySelector(".punt1div");
@@ -184,6 +206,8 @@
         var punt2div = document.querySelector(".punt2div");
         var punt3 = document.querySelector(".punt3");
         var punt3div = document.querySelector(".punt3div");
+        var punt4 = document.querySelector(".punt4");
+        var punt4div = document.querySelector(".punt4div");
 
 
       $(".karaktersdiv img:nth-of-type(1)").click(function(){
@@ -192,7 +216,6 @@
 });
 
         jess.onclick = showJess;
-
         function showJess() {
           logo.classList.add("weg");
           tekst.classList.add("weg");
@@ -202,6 +225,20 @@
           karaktersmenu.classList.remove("invisible");
           tekstjess.classList.remove("invisible");
           tekstjess.classList.add("tekstinkomen");
+        }
+
+        nick.onclick = showNick;
+        function showNick() {
+          jesspng.classList.add("invisible");
+          tekstjess.classList.add("invisible2");
+          logo.classList.add("weg");
+          tekst.classList.add("weg");
+          pijl.classList.add("weg");
+          nickpng.classList.remove("invisible");
+          nickpng.classList.add("jessinkomen");
+          karaktersmenu.classList.remove("invisible");
+          tekstnick.classList.remove("invisible");
+          tekstnick.classList.add("tekstinkomen");
         }
 
         punt1.onclick = show1;
@@ -220,6 +257,12 @@
         function show3(){
           punt3div.classList.toggle("invisible");
           punt3div.classList.toggle("test");
+        }
+
+        punt4.onclick = show4;
+        function show4(){
+          punt4div.classList.toggle("invisible");
+          punt4div.classList.toggle("test");
         }
 
     </script>
