@@ -222,7 +222,6 @@ html {
 
 .punt1 {
   position: absolute;
-  /* background-color: yellow; */
   width: 2.5em;
   height: 2.5em;
   margin-top: 39%;
@@ -292,6 +291,104 @@ html {
   height: 2.5em;
   margin-top: 37.8%;
   margin-left: 52.5%;
+  cursor: pointer;
+}
+
+.punt5div {
+  margin-top: 41%;
+  margin-left: 20%;
+}
+
+.punt5 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 42.3%;
+  margin-left: 56%;
+  cursor: pointer;
+}
+
+.punt6div {
+  margin-top: 41%;
+  margin-left: 20%;
+}
+
+.punt6 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 44.8%;
+  margin-left: 56%;
+  cursor: pointer;
+}
+
+.punt7div {
+  margin-top: 44%;
+  margin-left: 28%;
+}
+
+.punt7 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 44.8%;
+  margin-left: 64%;
+  cursor: pointer;
+}
+
+.punt8div {
+  margin-top: 42%;
+  margin-left: 38%;
+}
+
+.punt8 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 43%;
+  margin-left: 32.5%;
+  cursor: pointer;
+}
+
+.punt9div {
+  margin-top: 48%;
+  margin-left: 44%;
+}
+
+.punt9 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 48%;
+  margin-left: 40.5%;
+  cursor: pointer;
+}
+
+.punt10div {
+  margin-top: 50%;
+  margin-left: 48%;
+}
+
+.punt10 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 49.5%;
+  margin-left: 43.5%;
+  cursor: pointer;
+}
+
+.punt11div {
+  margin-top: 48%;
+  margin-left: 56%;
+}
+
+.punt11 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 48%;
+  margin-left: 52%;
   cursor: pointer;
 }
 
